@@ -15,4 +15,4 @@ RUN set -xe \
 EXPOSE 21
 VOLUME /home/ftpuser /etc/pure-ftpd
 
-CMD ["pure-ftpd", "--login", "puredb:/etc/pure-ftpd/pureftpd.pdb", "--createhomedir", "-y 10:20"]
+CMD ["pure-ftpd", "-y", "10:20", "--login", "puredb:/etc/pure-ftpd/pureftpd.pdb", "--createhomedir"]
